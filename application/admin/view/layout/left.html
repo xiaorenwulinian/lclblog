@@ -1,0 +1,77 @@
+<style>
+    .metcms_cont_left{
+        float: left;
+        width: 200px;
+        overflow: auto;
+        position: relative;
+        /*background: #3398cc;*/
+        background: #F5F5F5;
+        color: black;
+        z-index: 99;
+        height: 100%;
+        font-size: 14px;
+
+    }
+
+    ul li{
+       list-style: none;
+    }
+</style>
+<div class="metcms_cont_left hidden-xs">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        后台管理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                     <ul>
+                         <li><a href="https://www.kancloud.cn/manual/thinkphp5_1/353980" target="right_frame">管理员列表</a></li>
+                         <li><a href="http://www.bootcss.com/" target="right_frame">管理员添加</a></li>
+                         <li><a href="/index.php/admin/Type/lst" target="right_frame">文章分类列表</a></li>
+                         <li><a href="/index.php/admin/Type/add" target="right_frame">文章分类添加</a></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        权限管理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="#">角色列表</a></li>
+                        <li><a href="/index.php/admin/Type/lst" target="right_frame">文章分类列表</a></li>
+                        <li><a href="/index.php/admin/Type/add" target="right_frame">文章分类添加</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        文章管理
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <ul>
+                        <li><a href="/index.php/admin/Article/lst" target="right_frame">文章分类列表</a></li>
+                        <li><a href="/index.php/admin/Article/add" target="right_frame">文章分类添加</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
