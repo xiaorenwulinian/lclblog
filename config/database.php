@@ -13,8 +13,7 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-//    'hostname'        => '127.0.0.1',
-    'hostname'        => '47.99.82.22',
+    'hostname'        => '127.0.0.1',
     // 数据库名
     'database'        => 'lclblog',
     // 用户名
@@ -22,7 +21,6 @@ return [
     'username'        => 'root',
     // 密码
 //    'password'        => '',
-    'password'        => 'lcl2018',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
