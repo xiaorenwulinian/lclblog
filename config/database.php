@@ -1,4 +1,5 @@
 <?php
+use think\facade\Env;
 // +----------------------------------------------------------------------
 // | ThinkPHP [ WE CAN DO IT JUST THINK ]
 // +----------------------------------------------------------------------
@@ -9,18 +10,19 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+
 return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => Env::get('database.DB_HOSTNAME','127.0.0.1'),
     // 数据库名
     'database'        => 'lclblog',
     // 用户名
 
-    'username'        => 'root',
+    'username'        => Env::get('database.DB_USERNAME','root'),
     // 密码
-//    'password'        => '',
+   'password'        => Env::get('database.DB_PASSWORD',''),
     // 端口
     'hostport'        => '3306',
     // 连接dsn
